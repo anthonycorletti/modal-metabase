@@ -1,0 +1,3 @@
+#!/bin/sh -e
+
+uv run modal deploy app/main.py

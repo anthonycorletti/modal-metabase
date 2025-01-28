@@ -1,0 +1,12 @@
+[project]
+name = "app"
+version = "0.0.0"
+description = "Run metabase on Modal."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["modal>=0.72"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.3",
+]
