@@ -1,3 +1,27 @@
 # modal-metabase
 
-Deploy metabase on Modal. Bring your data vis analytics and ML infra closer together. Mmm chocolate _and_ peanut butter now isn't that nice.
+Deploy metabase on Modal. Bring your data vis and analytics closer to your ML infra.
+
+![](/assets/Screenshot%202025-01-27%20at%209.59.26 PM.png)
+
+> [!NOTE]
+> This deployment isn't tuned for production workloads. You should provision a separate datastore like a Postgres database on [neon](https://neon.tech) for example and set [environment variables](https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file) appropriately to provision the database and make connections to store whatever you need to.
+> Metabase supports a [wide range](https://www.metabase.com/docs/latest/databases/connecting) of datastores.
+
+## Running the demo
+
+1. Clone this repository
+    ```sh
+    git clone https://github.com/anthonycorletti/modal-metabase.git && cd modal-metabase
+    ```
+1. Install `uv` if you haven't already: https://docs.astral.sh/uv/getting-started/installation/
+1. Install dependencies and activate the virtual environment
+    ```sh
+    bin/install
+    source .venv/bin/activate
+    ```
+1. Deploy!
+    ```sh
+    bin/deploy-modal
+    ```
+1. Visit the deployed app `https://YOUR_MODAL_PROFILE--modal-metabase-metabase.modal.run` and follow the instructions for setting up your metabase!
