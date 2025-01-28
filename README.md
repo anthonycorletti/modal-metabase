@@ -4,9 +4,9 @@ Deploy metabase on Modal. Bring your data vis and analytics closer to your ML in
 
 ![](/assets/Screenshot%202025-01-27%20at%209.59.26 PM.png)
 
-> [!NOTE]
-> This deployment isn't tuned for production workloads. You should provision a separate datastore like a Postgres database on [neon](https://neon.tech) for example and set [environment variables](https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file) appropriately to provision the database and make connections to store whatever you need to.
-> Metabase supports a [wide range](https://www.metabase.com/docs/latest/databases/connecting) of datastores.
+> [!WARNING]
+> This deployment isn't tuned for production workloads. Use it as a proof of concept.
+> You should provision a separate database like postgres for example and set [environment variables](https://www.metabase.com/docs/latest/installation-and-operation/running-the-metabase-jar-file) appropriately to provision the database and make connections to store whatever data you need to. Metabase supports a [wide range](https://www.metabase.com/docs/latest/databases/connecting) of datastores, making it a great choice for data vis that complements your data eng/ ML work running on Modal.
 
 ## Running the demo
 
